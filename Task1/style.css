@@ -166,13 +166,7 @@ span.in-label{
 #language-select-button{
 	background: #FFFFFF;
 	border: 1px solid #F0F0F0;
-	box-sizing: border-box;
-	border-radius: 4px;
-	height: 32px;
 	width: 270px;
-	left: 1040px;
-	top: 69px;
-	border-radius: 4px;
 }
 #language-label{
 	text-transform: uppercase;
