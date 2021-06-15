@@ -1,9 +1,19 @@
 .navigation{
 	height: 80px;
+	padding-left: 0px;
+	padding-right: 0px;
 }
 .footer{
 	height: 215px;
-	background: #F7F9FB;
+	background-color: #F7F9FB;
+}
+.footer::before{
+	content:"";
+    background-color:#F7F9FB;
+	position: absolute;
+    height: 215px;
+	width: 200%;
+    z-index: -1;
 }
 div{
 	display: flex;
