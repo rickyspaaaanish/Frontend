@@ -1,7 +1,7 @@
-#navigation{
+.navigation{
 	height: 80px;
 }
-#footer{
+.footer{
 	height: 215px;
 	background: #F7F9FB;
 }
@@ -14,7 +14,7 @@ div{
 	width: inherit;
 	height: inherit;
 }
-#logo{
+.logo{
 	height: 46px;
 	width: 46px;
 }
@@ -22,7 +22,7 @@ img{
 	max-width: 100%;
 	max-height: 100%;
 }
-#navigation-row > div{
+.navigation-row > div{
 	height: inherit;
 	border-right: 1px solid #F4F4F4;
 	border-left: 1px solid #F4F4F4;
@@ -42,52 +42,52 @@ img{
 .button > .label{
 	text-transform: uppercase;
 }
-#search-label{
+.search-label{
 	font-family: Gotham Pro;
 	font-size: 16px;
 	line-height: 15px;
 	color: #CECECE;
 }
-#avatar{
+.avatar{
 	height: 42px;
 	width: 42px;
 }
-#info{
+.info{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: left;
 	box-sizing: content-box;
 	height: 50%;
 }
-#you-label{
+.you-label{
 	color: #CECECE;
 	font-weight: normal;
 	text-transform: uppercase;
 	flex: auto;
 }
-#views-label{
+.views-label{
 	font-weight: normal;
 	color: #747474;
 }
-#name-label{
+.name-label{
 	text-transform: uppercase;
 }
-#views-difference{
+.views-difference{
 	flex: auto;
 }
-#difference-label{
+.difference-label{
 	color: #02B033;
 }
-#footer-navigation-label{
+.footer-navigation-label{
 	display: block;
 	text-align: left;
 }
-#footer-right-top-label{
+.footer-right-top-label{
 	display: block;
 	padding-left: 40%;
 	padding-bottom: 40%;
 }
-#footer-logo-title{
+.footer-logo-title{
 	padding-top: 20%;
 	font-size: 14px;
 	line-height: 150%;
@@ -105,40 +105,40 @@ span.in-label{
 	align-items: flex-start;
 	height: 24px;
 }
-#navigation-menu{
+.navigation-menu{
 	display: flex;
 	flex-direction: column;
 	height: inherit;
 	justify-content: flex-start;
 }
-#navigation-menu > .row{
+.navigation-menu > .row{
 	display: flex;
 	float: left;
 }
-#menu{
+.menu{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: flex-start;
 }
-#menu > .col-4{
+.menu > .col-4{
 	flex-direction: column;
 	height: 70%;
 	align-items: flex-start;
 	justify-content: flex-start;
 }
-#menu-header{
+.menu-header{
 	width: 100%;
 	height: 55%;
 }
-#questions-button{
+.questions-button{
 	background: #0275B1;
 }
-#questions-label{
+.questions-label{
 	text-transform: uppercase;
 	color: #FFFFFF;
 }
-#settings-label{
+.settings-label{
 	text-transform: uppercase;
 	color: #0275B1;
 }
@@ -153,29 +153,29 @@ span.in-label{
 	text-align: left;
 	justify-content: space-between;
 }
-#fast-access-menu{
+.fast-access-menu{
     height: 72px;
 	width: 100%;
 	display: flex;
 	align-items: flex-start;
 }
-#fast-menu-header{
+.fast-menu-header{
 	width: 100%;
 	height: 76px;
 }
-#language-select-button{
+.language-select-button{
 	background: #FFFFFF;
 	border: 1px solid #F0F0F0;
 	width: 270px;
 }
-#language-label{
+.language-label{
 	text-transform: uppercase;
 }
-#language-select-menu-header{
+.language-select-menu-header{
 	width: 100%;
     height: 76px;
 }
-#language-select-menu{
+.language-select-menu{
 	height: 72px;
     width: 100%;
     display: flex;
