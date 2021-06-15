@@ -20,6 +20,12 @@ div{
 	justify-content: center;
 	align-items: center;
 }
+a:hover, .button:hover{
+	cursor: pointer;
+}
+a{
+	text-decoration: none;
+}
 .row{
 	width: inherit;
 	height: inherit;
@@ -85,7 +91,7 @@ img{
 .views-difference{
 	flex: auto;
 }
-.difference-label{
+.difference-label, .fa-arrow-up{
 	color: #02B033;
 }
 .footer-navigation-label{
@@ -180,6 +186,12 @@ span.in-label{
 }
 .language-label{
 	text-transform: uppercase;
+}
+.fa-question-circle-o{
+	color: #FFFFFF;
+}
+.fa-cog, .fa-chevron-down, .fa-search{
+	color: #0275B1;
 }
 .language-select-menu-header{
 	width: 100%;
