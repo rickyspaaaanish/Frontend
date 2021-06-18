@@ -227,8 +227,50 @@ span.in-label{
 .profile-top{
 	display: flex;
 	justify-content: start;
-    padding-left: 0px;
-    padding-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.project-textbox{
+	display: flex;
+	justify-content: flex-start;
+	margin-left: 3.5%;
+	width: 100%;
+	padding-left: 0px;
+}
+.projects-top{
+	margin-left: 2%;
+	padding-top: 30px;
+}
+.years-title{
+  font-family: Gotham Pro;
+  color: #0275B1;
+  font-weight: bold;
+}
+.education-experience-top{
+	margin-left: 2%;
+}
+.projects-count-text{
+	display: inline;
+	padding-left: 10px;
+	width: 68px;
+	color: #747474;
+}
+.left-block{
+	padding-left: 0px;
+}
+.right-block{
+	padding-right: 0px;
+}
+.center-block{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.projects-bottom{
+	display: flex;
+	align-self: flex-start;
+	margin-left: 3.5%;
+	text-align: left;
+	padding-bottom: 30px;
 }
 .profile-header{
 	display: flex;
@@ -240,6 +282,7 @@ span.in-label{
 	margin-right: 0px;
 }
 .profile-row{
+	position: relative;
 	margin-top: 40px;
 }
 .profile-info{
@@ -283,6 +326,12 @@ span.in-label{
 .description{
 	font-size: 14px;
 	line-height: 21px;
+	font-weight: bold;
+}
+.profile-description{
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 21px;
 }
 .dashboard{
 	display: flex;
@@ -294,12 +343,211 @@ span.in-label{
 	box-shadow: 0px 20px 60px rgba(241, 244, 248, 0.5);
 	border-radius: 4px;
 }
-.about{
+.about, .projects, .skills, .experience, .education{
 	display: flex;
 	flex-direction: column;
+	justify-content: space-evenly;
 	background: #FFFFFF;
 	box-shadow: 0px 20px 60px rgba(241, 244, 248, 0.5);
 	border-radius: 4px;
+}
+.profile-button{
+	width: 36px;
+	height: 36px;
+	background: rgba(255, 255, 255, 0.9);
+	box-shadow: 0px 10px 30px rgba(113, 123, 133, 0.05);
+	border-radius: 4px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.about-textbox{
+	display: flex;
+	align-self: flex-start;
+	margin-left: 3.5%;
+}
+.about-top{
+	padding-top: 15px;
+}
+.about-bottom{
+	padding-bottom: 15px;
+	font-size: 12px;
+	line-height: 11px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #0275B1;
+}
+.sidebar{
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+}
+.about{
+	height: 170px;
+}
+.about, .experience, .education{
+	margin-top: 20px;
+}
+.skills{
+	box-sizing: content-box;
+	width: 100%;
+	height: 220px;
+	margin-top: 20px;
+}
+.education{
+	box-sizing: content-box;
+	width: 100%;
+	height: 195px;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+.experience{
+	box-sizing: content-box;
+	width: 100%;
+	height: 345px;
+	margin-top: 20px;
+}
+.projects{
+	box-sizing: content-box;
+	width: 100%;
+	height: 355px;
+	margin-top: 20px;
+}
+.main-content{
+	display: flex;
+	flex-direction: column;
+	padding-left: 0px;
+    padding-right: 0px;
+}
+.projects-preview{
+	display: flex;
+	flex-wrap: nowrap;
+	box-sizing: content-box;
+	align-content: space-around;
+	width: 100%;
+}
+.project-block{
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: column;
+	box-sizing: content-box;
+	width: 100%;
+	height: 100%;
+}
+.img-project-preview{
+	padding-left: 0px;
+	padding-right: 0px;
+	box-sizing: content-box;
+	width: 90%;
+}
+.project-title{
+  align-self: start;
+  margin-left: 6%;
+}
+.block-header{
+  display: flex;
+  justify-content: space-between;
+  width: 84%;
+}
+.skill-header{
+  padding-bottom: 10px;
+}
+.skill-count{
+  padding-bottom: 10px;
+	margin-left: 6%;
+  color: #0275B1
+}
+.left-users-img{
+  margin-right: 40%;
+}
+.experience, .education{
+  justify-content: space-evenly;
+}
+.experience-preview{
+  align-items: flex-start;
+}
+.record{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-right: 3.5%;
+  padding-left: 2%;
+  width: 700px;
+}
+.record-logo{
+  padding-left: 3.5%;
+}
+.skills-block{
+  flex-direction: column;
+  width: 220px;
+  height: 80px;
+  background: #FFFFFF;
+  border: 1px solid #F4F4F4;
+  border-radius: 6px;
+}
+.project-description{
+	align-self: start;
+	font-size: 10px;
+	line-height: 15px;
+	padding-bottom: 30px;
+	margin-left: 6%;
+}
+.record-text{
+  align-self: start;
+	font-size: 10px;
+	line-height: 15px;
+}
+.expand-control{
+	font-size: 12px;
+	line-height: 11px;
+	text-transform: uppercase;
+	color: #0275B1;
+	font-weight: bold;
+}
+.visitors{
+	display: flex;
+	height: 427px;
+	background: #FCFDFD;
+	border-radius: 4px;
+}
+.profile-buttons{
+	display: flex;
+	width: 100%;
+	justify-content: start;
+}
+.questions-button, .settings-button{
+	display: flex;
+	justify-content: center;
+}
+.settings-button{
+	margin-left: 15px
+}
+.profile-logo-gold{
+	margin-left: 8px;
+}
+.upload-button{
+	position: absolute;
+	left: 140px;
+	top: 20px
+}
+.edit-button{
+	position: absolute;
+	width: 132px;
+	left: 668px;
+	top: 20px;
+}
+.more-button{
+	position: absolute;
+	left: 815px;
+	top: 20px;
+}
+.button-label{
+	font-size: 12px;
+	line-height: 11px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.location-logo{
+	margin-right: 10px;
 }
 @font-face{
 	font-family: Gotham Pro;
