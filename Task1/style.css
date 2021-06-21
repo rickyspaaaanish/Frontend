@@ -1,12 +1,18 @@
 .navigation{
 	height: 80px;
-	padding-left: 0px;
+}
+.cleaned_padding{
+  padding-left: 0px;
 	padding-right: 0px;
+}
+.full-width{
+  width: 100%;
+}
+.full-height{
+  height: 100%;
 }
 .main{
 	background-color: #F7F9FB;
-	padding-left: 0px;
-	padding-right: 0px;
 }
 .main::before{
 	content:"";
@@ -60,20 +66,29 @@ a{
 	border-right: 1px solid #F4F4F4;
 	border-left: 1px solid #F4F4F4;
 }
+.flex-column{
+  flex-direction: column;
+}
 .button{
-	flex-direction: column;
 	align-items: center;
 }
-.label {
-	font-family: Gotham Pro;
-	font-size: 12px;
-	font-weight: bold;
+.text-size-xs{
+  font-size: 10px;
+	line-height: 15px;
+}
+.text-size-s{
+  font-size: 12px;
 	line-height: 11px;
+}
+.text-size-m{
+  font-size: 14px;
+  line-height: 21px;
+}
+.label{
+	font-family: Gotham Pro;
+  font-weight: bold;
 	text-align: center;
 	color: #181818;
-}
-.button > .label{
-	text-transform: uppercase;
 }
 .search-label{
 	font-family: Gotham Pro;
@@ -86,7 +101,6 @@ a{
 	width: 42px;
 }
 .info{
-	display: flex;
 	flex-wrap: wrap;
 	justify-content: left;
 	box-sizing: content-box;
@@ -108,7 +122,7 @@ a{
 .views-difference{
 	flex: auto;
 }
-.difference-label, .fa-arrow-up{
+.difference-label{
 	color: #02B033;
 }
 .footer-navigation-label{
@@ -122,49 +136,32 @@ a{
 }
 .footer-logo-title{
 	padding-top: 20%;
-	font-size: 14px;
-	line-height: 150%;
 }
 span.in-label{
 	color: #0275B1;	
 }
 .navigation-menu-control{
-	font-family: Gotham Pro;
-	font-size: 12px;
-	line-height: 11px;
-	text-align: left;
-	color: #181818;
-	justify-content: left;
-	align-items: flex-start;
 	height: 24px;
 }
 .navigation-menu{
-	display: flex;
-	flex-direction: column;
 	height: inherit;
 	justify-content: flex-start;
 }
-.navigation-menu > .row{
-	display: flex;
-	float: left;
-}
 .menu{
-	width: 100%;
-	display: flex;
+  width: 100%;
 	flex-wrap: wrap;
 	align-items: flex-start;
 }
-.menu > .col-4{
-	flex-direction: column;
+.menu-column{
 	height: 70%;
 	align-items: flex-start;
 	justify-content: flex-start;
 }
 .menu-header{
-	width: 100%;
 	height: 55%;
+  width: 100%;
 }
-.questions-button{
+.blue-button{
 	background: #0275B1;
 }
 .questions-label{
@@ -187,14 +184,16 @@ span.in-label{
 	justify-content: space-between;
 }
 .fast-access-menu{
-    height: 72px;
-	width: 100%;
-	display: flex;
+  height: 72px;
+  width: 100%;
 	align-items: flex-start;
 }
 .fast-menu-header{
-	width: 100%;
 	height: 76px;
+  width: 100%;
+}
+.fast-access-menu-button{
+  justify-content: space-between;
 }
 .language-select-button{
 	background: #FFFFFF;
@@ -204,20 +203,13 @@ span.in-label{
 .language-label{
 	text-transform: uppercase;
 }
-.fa-question-circle-o{
-	color: #FFFFFF;
-}
-.fa-cog, .fa-chevron-down, .fa-search{
-	color: #0275B1;
-}
 .language-select-menu-header{
-	width: 100%;
   height: 76px;
+  width: 100%;
 }
 .language-select-menu{
 	height: 72px;
   width: 100%;
-  display: flex;
   align-items: flex-start;
 }
 .navigation-button-icon{
@@ -233,27 +225,12 @@ span.in-label{
 .icon-arrow-up-right{
   font-size: 12px;
 }
-.main{
-	display: flex;
-	flex-direction: column;
-}
-.profile{
-	display: flex;
-	flex-direction: column;
-	padding-left: 0px;
-	padding-right: 0px;
-}
 .profile-top{
-	display: flex;
 	justify-content: start;
-  padding-left: 0px;
-  padding-right: 0px;
 }
 .project-textbox{
-	display: flex;
 	justify-content: flex-start;
 	margin-left: 3.5%;
-	width: 100%;
 	padding-left: 0px;
 }
 .projects-top{
@@ -281,23 +258,17 @@ span.in-label{
 .right-block{
 	padding-right: 0px;
 }
-.center-block{
-	padding-left: 0px;
-	padding-right: 0px;
-}
 .projects-bottom{
-	display: flex;
 	align-self: flex-start;
 	margin-left: 3.5%;
 	text-align: left;
 	padding-bottom: 30px;
 }
 .profile-header{
-	display: flex;
 	align-self: flex-start;
-	width: 100%;
 	height: 330px;
 	background-color: #FFFFFF;
+  width: 100%;
 	margin-left: 0px;
 	margin-right: 0px;
 }
@@ -310,11 +281,9 @@ span.in-label{
   justify-content: center;
 }
 .profile-info{
-	display: flex;
 	align-content: flex-start;
 }
 .user-pic{
-	display: flex;
 	align-self: start;
 	position: relative;
 	bottom: 30px;
@@ -322,17 +291,13 @@ span.in-label{
 	width: 170px;
 }
 .user-info{
-	display: flex;
-	flex-direction: column;
 	padding-right: 25px;
 	padding-left: 25px;
 	justify-content: space-between;
 	height: 120px;
 }
 .user-info-header{
-	display: flex;
 	justify-content: space-between;
-	width: 100%;
 }
 .text{
 	font-family: Gotham Pro;
@@ -343,29 +308,16 @@ span.in-label{
 	line-height: 17px;
 	font-weight: bold;
 }
-.location{
-	font-size: 12px;
-	line-height: 18px;
-}
 .description{
-	font-size: 14px;
-	line-height: 21px;
 	font-weight: bold;
 }
 .profile-description{
-	font-weight: normal;
-	font-size: 14px;
-	line-height: 21px;
+  font-weight: normal;
 }
 .profile-name{
-  font-size: 14px;
   font-weight: bold;
-  line-height: 13px;
-  color: #181818;
 }
 .dashboard{
-	display: flex;
-	flex-direction: column;
   justify-content: space-evenly;
 	background: #FFFFFF;
 	width: 290px;
@@ -378,9 +330,7 @@ span.in-label{
   justify-content: space-between
 }
 .all-stats-control{
-  font-size: 12px;
   font-weight: bold;
-  line-height: 11px;
   text-align: right;
   text-decoration-line: underline;
   text-transform: uppercase;
@@ -390,12 +340,6 @@ span.in-label{
   width: 75%;
   align-items: flex-start;
   height: 20%;
-  flex-direction: column;
-}
-.block-text{
-  font-size: 14px;
-  line-height: 21px;
-  color: #181818;
 }
 .block-number{
   font-size: 52px;
@@ -404,13 +348,13 @@ span.in-label{
   text-transform: uppercase;
   color: #0275B1;
 }
-.about, .projects, .skills, .experience, .education{
-	display: flex;
-	flex-direction: column;
+.main-content-block{
 	justify-content: space-evenly;
 	background: #FFFFFF;
 	box-shadow: 0px 20px 60px rgba(241, 244, 248, 0.5);
 	border-radius: 4px;
+  box-sizing: content-box;
+	margin-top: 20px;
 }
 .profile-button{
 	width: 36px;
@@ -418,11 +362,8 @@ span.in-label{
 	background: rgba(255, 255, 255, 0.9);
 	box-shadow: 0px 10px 30px rgba(113, 123, 133, 0.05);
 	border-radius: 4px;
-	padding-left: 0px;
-	padding-right: 0px;
 }
 .about-textbox{
-	display: flex;
 	align-self: flex-start;
 	margin-left: 3.5%;
 }
@@ -431,22 +372,16 @@ span.in-label{
 }
 .about-bottom{
 	padding-bottom: 15px;
-	font-size: 12px;
-	line-height: 11px;
 	font-weight: bold;
 	text-transform: uppercase;
 	color: #0275B1;
 }
 .sidebar{
-	display: flex;
-	flex-direction: column;
 	justify-content: start;
   align-items: flex-end;
-  padding-right: 0px;
 }
 .main-sidebar{
   align-self: flex-start;
-  height: 100%;
 }
 .about{
 	height: 170px;
@@ -458,13 +393,9 @@ span.in-label{
 }
 .unselected-tab-label{
   text-transform: uppercase;
-  color: #181818;
 }
 .middle-line{
   width: 90%;
-}
-.under-line{
-  width: 100%;
 }
 .unselected-tab{
   width: 220px;
@@ -477,58 +408,29 @@ span.in-label{
 .right-tab{
   border-radius: 0px 4px 0px 0px;
 }
-.about, .experience, .education, .buttons-bar{
-	margin-top: 20px;
-}
 .skills{
-	box-sizing: content-box;
-	width: 100%;
 	height: 220px;
-	margin-top: 20px;
 }
 .education{
-	box-sizing: content-box;
-	width: 100%;
 	height: 195px;
-	margin-top: 20px;
 	margin-bottom: 40px;
 }
 .experience{
-	box-sizing: content-box;
-	width: 100%;
 	height: 345px;
-	margin-top: 20px;
 }
 .projects{
-	box-sizing: content-box;
-	width: 100%;
 	height: 355px;
-	margin-top: 20px;
-}
-.main-content{
-	display: flex;
-	flex-direction: column;
-	padding-left: 0px;
-  padding-right: 0px;
 }
 .projects-preview{
-	display: flex;
 	flex-wrap: nowrap;
 	box-sizing: content-box;
 	align-content: space-around;
-	width: 100%;
 }
 .project-block{
-	display: flex;
 	justify-content: space-evenly;
-	flex-direction: column;
 	box-sizing: content-box;
-	width: 100%;
-	height: 100%;
 }
 .img-project-preview{
-	padding-left: 0px;
-	padding-right: 0px;
 	box-sizing: content-box;
 	width: 90%;
 }
@@ -537,7 +439,6 @@ span.in-label{
   margin-left: 6%;
 }
 .block-header{
-  display: flex;
   justify-content: space-between;
   width: 84%;
 }
@@ -559,17 +460,16 @@ span.in-label{
   align-items: flex-start;
 }
 .record{
-  display: flex;
-  flex-direction: column;
   align-items: flex-start;
   padding-right: 3.5%;
   padding-left: 2%;
   width: 700px;
 }
 .buttons-bar{
-  width: 100%;
   justify-content: left;
   align-items: flex-end;
+  box-sizing: content-box;
+	margin-top: 20px;
 }
 .record-logo{
   padding-left: 3.5%;
@@ -581,7 +481,6 @@ span.in-label{
   background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%);
 }
 .skills-block{
-  flex-direction: column;
   width: 220px;
   height: 80px;
   background: #FFFFFF;
@@ -590,44 +489,27 @@ span.in-label{
 }
 .project-description{
 	align-self: start;
-	font-size: 10px;
-	line-height: 15px;
 	padding-bottom: 30px;
 	margin-left: 6%;
 }
-.profile-info-text{
-  font-size: 10px;
-	line-height: 15px;
-}
 .course-name{
-  font-size: 14px;
   font-weight: bold;
-  line-height: 17px;
-  color: #181818;
 }
 .record-text{
   align-self: start;
-	font-size: 10px;
-	line-height: 15px;
   margin-top: 5px;
 }
 .expand-control{
-	font-size: 12px;
-	line-height: 11px;
 	text-transform: uppercase;
 	color: #0275B1;
 	font-weight: bold;
 }
 .visitor-info{
-  width: 100%;
-  height: 100%;
-  flex-direction: column;
   align-items: flex-start;
   justify-content: space-evenly;
   padding-left: 10px;
 }
 .visitors-header{
-  width: 100%;
   justify-content: space-around;
 }
 .visitor-profile{
@@ -639,7 +521,6 @@ span.in-label{
   width: 290px;
 	background: #FCFDFD;
 	border-radius: 4px;
-  flex-direction: column;
   justify-content: space-evenly;
 }
 .visitors{
@@ -649,13 +530,7 @@ span.in-label{
   height: 338px;
 }
 .profile-buttons{
-	display: flex;
-	width: 100%;
 	justify-content: start;
-}
-.questions-button, .settings-button{
-	display: flex;
-	justify-content: space-between;
 }
 .contact-info-button{
   justify-content: center;
@@ -684,8 +559,6 @@ span.in-label{
 	top: 20px;
 }
 .button-label{
-	font-size: 12px;
-	line-height: 11px;
 	text-align: center;
 	text-transform: uppercase;
 }
@@ -698,7 +571,6 @@ span.in-label{
 .education-experience-description{
   margin-top: 10px;
 }
-
 @font-face{
 	font-family: Gotham Pro;
 	src: url("fonts/GothamPro.ttf") format("truetype");
