@@ -10,9 +10,12 @@
 }
 .main::before{
 	content:"";
+  display: block;
 	background-color:#F7F9FB;
-	position: absolute;
-	min-width:100%;
+  position: fixed;
+  top: 80px;
+  width: 100%;
+  height: 100%;
 	z-index: -1;
 }
 .footer{
@@ -31,6 +34,12 @@ div{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+.navigation-row{
+  position: fixed;
+  background-color: #FFFFFF;
+  z-index: 1;
+  max-width: inherit;
 }
 a:hover, .button:hover{
 	cursor: pointer;
@@ -245,6 +254,7 @@ span.in-label{
   font-family: Gotham Pro;
   color: #0275B1;
   font-weight: bold;
+  margin-left: 15px;
 }
 .education-experience-top{
 	margin-left: 2%;
@@ -284,6 +294,10 @@ span.in-label{
 .profile-row{
 	position: relative;
 	margin-top: 40px;
+}
+.connections-button{
+  margin-left: 15px;
+  justify-content: center;
 }
 .profile-info{
 	display: flex;
@@ -333,15 +347,52 @@ span.in-label{
 	font-size: 14px;
 	line-height: 21px;
 }
+.profile-name{
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 13px;
+  color: #181818;
+}
 .dashboard{
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+  justify-content: space-evenly;
 	background: #FFFFFF;
 	width: 290px;
 	height: 330px;
 	box-shadow: 0px 20px 60px rgba(241, 244, 248, 0.5);
 	border-radius: 4px;
+}
+.dashboard-header{
+  width: 80%;
+  justify-content: space-between
+}
+.all-stats-control{
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 11px;
+  text-align: right;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: #0275B1;
+}
+.dashboard-block{
+  width: 75%;
+  align-items: flex-start;
+  height: 20%;
+  flex-direction: column;
+}
+.block-text{
+  font-size: 14px;
+  line-height: 21px;
+  color: #181818;
+}
+.block-number{
+  font-size: 52px;
+  font-weight: bold;
+  line-height: 50px;
+  text-transform: uppercase;
+  color: #0275B1;
 }
 .about, .projects, .skills, .experience, .education{
 	display: flex;
@@ -380,11 +431,43 @@ span.in-label{
 	display: flex;
 	flex-direction: column;
 	justify-content: start;
+  align-items: flex-end;
+  padding-right: 0px;
+}
+.main-sidebar{
+  align-self: flex-start;
+  height: 100%;
 }
 .about{
 	height: 170px;
 }
-.about, .experience, .education{
+.selected-tab{
+  width: 220px;
+  height: 50px;
+  border-radius: 4px 4px 0px 0px;
+}
+.unselected-tab-label{
+  text-transform: uppercase;
+  color: #181818;
+}
+.middle-line{
+  width: 90%;
+}
+.under-line{
+  width: 100%;
+}
+.unselected-tab{
+  width: 220px;
+  height: 40px;
+  background: #FFFFFF;
+  border: 1px solid #E7E7E7;
+  margin-left: 0px;
+  justify-content: center;
+}
+.right-tab{
+  border-radius: 0px 4px 0px 0px;
+}
+.about, .experience, .education, .buttons-bar{
 	margin-top: 20px;
 }
 .skills{
@@ -416,7 +499,7 @@ span.in-label{
 	display: flex;
 	flex-direction: column;
 	padding-left: 0px;
-    padding-right: 0px;
+  padding-right: 0px;
 }
 .projects-preview{
 	display: flex;
@@ -462,7 +545,7 @@ span.in-label{
 .experience, .education{
   justify-content: space-evenly;
 }
-.experience-preview{
+.experience-education-preview{
   align-items: flex-start;
 }
 .record{
@@ -473,8 +556,19 @@ span.in-label{
   padding-left: 2%;
   width: 700px;
 }
+.buttons-bar{
+  width: 100%;
+  justify-content: left;
+  align-items: flex-end;
+}
 .record-logo{
   padding-left: 3.5%;
+}
+.line{
+  border: 1px solid #f4f4f4;
+}
+.gradient-button{
+  background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%);
 }
 .skills-block{
   flex-direction: column;
@@ -491,10 +585,21 @@ span.in-label{
 	padding-bottom: 30px;
 	margin-left: 6%;
 }
+.profile-info-text{
+  font-size: 10px;
+	line-height: 15px;
+}
+.course-name{
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 17px;
+  color: #181818;
+}
 .record-text{
   align-self: start;
 	font-size: 10px;
 	line-height: 15px;
+  margin-top: 5px;
 }
 .expand-control{
 	font-size: 12px;
@@ -503,11 +608,35 @@ span.in-label{
 	color: #0275B1;
 	font-weight: bold;
 }
-.visitors{
-	display: flex;
-	height: 427px;
+.visitor-info{
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding-left: 10px;
+}
+.visitors-header{
+  width: 100%;
+  justify-content: space-around;
+}
+.visitor-profile{
+  width: 80%;
+  justify-content: left;
+}
+.sidebar-block{
+  margin-top: 20px;
+  width: 290px;
 	background: #FCFDFD;
 	border-radius: 4px;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.visitors{
+	height: 427px;
+}
+.courses{
+  height: 338px;
 }
 .profile-buttons{
 	display: flex;
@@ -516,10 +645,10 @@ span.in-label{
 }
 .questions-button, .settings-button{
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 }
-.settings-button{
-	margin-left: 15px
+.contact-info-button{
+  justify-content: center;
 }
 .profile-logo-gold{
 	margin-left: 8px;
@@ -548,6 +677,12 @@ span.in-label{
 }
 .location-logo{
 	margin-right: 10px;
+}
+.job-location{
+  margin-left: 15px;
+}
+.education-experience-description{
+  margin-top: 10px;
 }
 @font-face{
 	font-family: Gotham Pro;
