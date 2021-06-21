@@ -76,8 +76,9 @@ a{
 }
 
 .navigation-row > div{
-  border-right: 1px solid #F4F4F4;
-  border-left: 1px solid #F4F4F4;
+  border-bottom: 1px solid #f4f4f4;
+  border-left: 1px solid #f4f4f4;
+  border-right: 1px solid #f4f4f4;
   height: inherit;
 }
 
