@@ -212,16 +212,26 @@ span.in-label{
 }
 .language-select-menu-header{
 	width: 100%;
-    height: 76px;
+  height: 76px;
 }
 .language-select-menu{
 	height: 72px;
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
 }
-.icon{
-	font-weight: bold;
+.navigation-button-icon{
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+.icon-search{
+  font-size: 24px;
+}
+.icon-navigation{
+  margin-right: 10px;
+}
+.icon-arrow-up-right{
+  font-size: 12px;
 }
 .main{
 	display: flex;
@@ -658,8 +668,12 @@ span.in-label{
 	left: 140px;
 	top: 20px
 }
+.icon-arrow-up-right{
+  margin-left: 5px;
+}
 .edit-button{
 	position: absolute;
+  justify-content: space-evenly;
 	width: 132px;
 	left: 668px;
 	top: 20px;
@@ -684,6 +698,7 @@ span.in-label{
 .education-experience-description{
   margin-top: 10px;
 }
+
 @font-face{
 	font-family: Gotham Pro;
 	src: url("fonts/GothamPro.ttf") format("truetype");
